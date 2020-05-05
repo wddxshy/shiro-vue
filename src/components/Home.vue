@@ -18,6 +18,7 @@
                 </el-dropdown>
 
                 <el-button type="primary" @click="accountLogin">登录</el-button>
+                <el-button type="primary" @click="registerPage">注册</el-button>
             </div>
         </el-header>
 
@@ -57,6 +58,9 @@
             },
             returnHome(){
                 this.$router.push('/');
+            },
+            registerPage(){
+                this.$router.push('/registerPage')
             }
         }
     }
